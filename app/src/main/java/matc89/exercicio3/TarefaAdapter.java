@@ -34,17 +34,17 @@ public class TarefaAdapter extends ArrayAdapter<Tarefa>{
         mResource = resource;
     }
     public View getView(int position, View convertView, ViewGroup parent) {
-        //get the persons information
+
         String descricao = getItem(position).getDescricao();
         int prioridade = getItem(position).getPrioridade();
 
-        //Create the person object with the information
+
         Tarefa tarefa = new Tarefa(descricao,prioridade);
 
-        //create the view result for showing the animation
+
         final View result;
 
-        //ViewHolder object
+
         ViewHolder holder;
 
 
@@ -69,6 +69,7 @@ public class TarefaAdapter extends ArrayAdapter<Tarefa>{
         int asa = tarefa.getPrioridade();
         String p = Integer.toString(asa);
         holder.prioridade.setText("Prioridade: " + p);
+
 
 
 
